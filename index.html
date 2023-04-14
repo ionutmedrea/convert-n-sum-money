@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Currency Converter</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" /> 
     <link rel="stylesheet" href="style/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div class="containers">
-        <div class="container">
-        <h1>Ron -> Euro</h1>
-            <div class="conversionWrapper">
-                <div class="row">
-                    <span>RON</span>
-                    <input type="number" name="ron" class="ron" placeholder="0.00" step="0.01"/>
-                    <span>---></span>
-                    <input type="number" name="euro1" class="euro1" placeholder="0.00" step="0.01"/>
-                    <span>&euro;</span>
-                </div>
-                <div class="row">
-                    <span>RON</span>
-                    <input type="number" name="ron" class="ron" placeholder="0.00" step="0.01"/>
-                    <span>---></span>
-                    <input type="number" name="euro1" class="euro1" placeholder="0.00" step="0.01"/>
-                    <span>&euro;</span>
-                </div>
+    <header>
+        <h1>CURRENCY CONVERTER</h1>
+    </header>
+    <div class="container">
+    <h2>RON -> EURO</h2>
+        <div class="conversionWrapper">
+            <div class="row">
+                <span>RON</span>
+                <input type="number" name="ron" class="ron" placeholder="0.00" step="0.01"/>
+                <span>---></span>
+                <input type="number" name="euro1" class="euro1" placeholder="0.00" step="0.01"/>
+                <span>&euro;</span>
             </div>
+            <div class="row">
+                <span>RON</span>
+                <input type="number" name="ron" class="ron" placeholder="0.00" step="0.01"/>
+                <span>---></span>
+                <input type="number" name="euro1" class="euro1" placeholder="0.00" step="0.01"/>
+                <span>&euro;</span>
+            </div>
+        </div>
         <div class="resultsWrapper">
             <button class="addRonRowButton">Add New Row</button>
             <div class="total1">
@@ -38,25 +42,25 @@
             </div>
             <button class="convertRonButton">Convert & Sum</button>
         </div>
-        </div>
-        <div class="container2">
-        <h1>Bgn -> Euro</h1>
-            <div class="conversionWrapper2">
-                <div class="row">
-                    <span>BGN</span>
-                    <input type="number" name="bgn" class="bgn" placeholder="0.00" step="0.01"/>
-                    <span>---></span>
-                    <input type="number" name="euro2" class="euro2" placeholder="0.00" step="0.01"/>
-                    <span>&euro;</span>
-                </div>
-                <div class="row">
-                    <span>BGN</span>
-                    <input type="number" name="bgn" class="bgn" placeholder="0.00" step="0.01"/>
-                    <span>---></span>
-                    <input type="number" name="euro2" class="euro2" placeholder="0.00" step="0.01"/>
-                    <span>&euro;</span>
-                </div>
+    </div>
+    <div class="container2">
+    <h2>BGN ->  EURO</h2>
+        <div class="conversionWrapper2">
+            <div class="row">
+                <span>BGN</span>
+                <input type="number" name="bgn" class="bgn" placeholder="0.00" step="0.01"/>
+                <span>---></span>
+                <input type="number" name="euro2" class="euro2" placeholder="0.00" step="0.01"/>
+                <span>&euro;</span>
             </div>
+            <div class="row">
+                <span>BGN</span>
+                <input type="number" name="bgn" class="bgn" placeholder="0.00" step="0.01"/>
+                <span>---></span>
+                <input type="number" name="euro2" class="euro2" placeholder="0.00" step="0.01"/>
+                <span>&euro;</span>
+            </div>
+        </div>
         <div class="resultsWrapper2">
             <button class="addBgnRowButton">Add New Row</button>
             <div class="total1">
@@ -69,8 +73,10 @@
             </div>
             <button class="convertBgnButton">Convert & Sum</button>
         </div>
-        </div>
     </div>
+    <footer>
+        <p>2023 Currency Converter &copy; Ionut Medrea</p>
+    </footer>
     <script src="script/main.js"></script>
 </body>
 </html>
