@@ -4,7 +4,7 @@ function moneyConvertRonToEuro(){
         fetch(url, {
                 method: "GET",
                 headers: {
-                        "apikey": "tBLcyWIAWJMZf5HckcX5Xcv1XU0Hi9Bl"
+                        "apikey": //add your api key here
                 }
         })
         .then( response => {
